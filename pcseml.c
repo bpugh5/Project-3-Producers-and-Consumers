@@ -82,6 +82,7 @@ void *producer_run(void *producer_id) {
 int main(int argc, char *argv[]) {
     if (argc != 5) {
         fprintf(stderr, "usage: producers consumers producer_events max_events\n");
+        exit(1);
     }
 
     producers = atoi(argv[1]);
